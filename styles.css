@@ -1,12 +1,22 @@
 body {
     background-color: #f8f9fa;
-  }
+    width: 98%;
+    margin: auto;
+    }
   .login-container {
     max-width: 400px;
     margin: 50px auto;
   }
   .hero-section {
-    background-color: #007bff;
+    min-height: auto;
+    min-width: 100vw;
+    background-size: 100% 100%;
+    width: 100%;
+    background-image: url(images/background.webp);
+    background-position: center;
+    opacity: 1;
+    position: relative;
+    background-repeat: no-repeat;
     color: #fff;
     padding: 100px 0;
   }
