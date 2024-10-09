@@ -16,3 +16,14 @@ Small count or label components used to add context, highlight notifications, or
 Modal:
 A dialog box that overlays the main content to display additional information or prompt user actions, often used for forms, confirmations, or notifications.
 
+Paging: 
+Used to go the next page and previous page as per user request
+
+Alert: 
+Pop's up with alert message as the page loads
+
+Search: 
+Used to search for specific stays
+
+Drop-down: 
+To choose more options in the website nav bar
