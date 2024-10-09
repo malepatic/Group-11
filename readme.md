@@ -51,3 +51,15 @@ card-img-top:
 
 text-center: 
 Centers the text inside the footer to maintain uniformity across the page.
+
+paging:
+Used to go the next page and previous page as per user request
+
+alert:
+Pop's up with alert message as the page loads
+
+search:
+Used to search for specific stays
+
+drop-down:
+To choose more options in the website nav bar
