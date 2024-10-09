@@ -8,8 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles.css">
 
-  <link rel="icon" type="image/x-icon" href="images/fav.jpeg">
-  <!--
+  <link rel="icon" type="image/x-icon" href="11.png">
   <style>
     body {
       background-color: #fff;
@@ -52,9 +51,6 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Logout</a>
           </li>
           <!-- Dropdown -->
           <li class="nav-item dropdown">
@@ -139,6 +135,9 @@
       </nav>
     </div>
   </section>
+
+
+<!-- Button trigger modal -->
 
   <section>
     <h2 class="text-center mt-5 mb-4">Most Frequently Asked Questions</h2>
@@ -225,8 +224,42 @@
     </div>
   </section>
 
-<!-- Button trigger modal -->
+  <section>
+    <div class="d-flex justify-content-center align-items-center">
+      <div id="carouselExampleIndicators" class="carousel slide w-50 mb-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/Carousel1.png" class="d-block w-100" alt="Slide 1">
+          </div>
+          <div class="carousel-item">
+            <img src="images/Carousel2.png" class="d-block w-100" alt="Slide 2">
+          </div>
+          <div class="carousel-item">
+            <img src="images/Carousel3.png" class="d-block w-100" alt="Slide 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
 
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Check Special Offers!
+</button>
+>>>>>>> a813aa709e7151fc51abf800d92cee24a4fb0c1a
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
