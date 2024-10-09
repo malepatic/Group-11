@@ -44,7 +44,24 @@
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
           </li>
-        </ul>
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              More
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Book</a></li>
+              <li><a class="dropdown-item" href="#">Plan a Trip</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Log Out</a></li>
+            </ul>
+          </li>
+          </ul>
+          <!-- Search Bar -->
+        <form class="d-flex ms-3">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
       </div>
     </div>
   </nav>
@@ -55,7 +72,7 @@
       <h1>Welcome to Our Website</h1>
       <p>Explore our features and services that will make your life easier.</p>
       <a href="#" class="btn btn-light">Get Started</a>
-    </div>
+
   </section>
 
   <!-- Features Section -->
@@ -95,6 +112,31 @@
       </div>
     </div>
   </section>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Check Special Offers!
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Exclusive Boston Stay Offers</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Get up to 20% off on your first booking in selected hotels across Boston! Book now and experience the best of the city.</p>
+        <p>Sign up for our newsletter to get more exclusive deals and travel tips.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Sign Up</button>
+      </div>
+    </div>
+  </div>
+</div>
 
   <!-- Footer -->
   <footer class="bg-light py-4 text-center">
