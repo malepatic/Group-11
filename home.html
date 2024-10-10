@@ -9,7 +9,8 @@
   <link rel="stylesheet" href="styles.css">
 
   <link rel="icon" type="image/x-icon" href="11.png">
-  
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
 
@@ -18,14 +19,15 @@
 <body>
   <!-- Alert -->
   <div class="alert alert-warning alert-dismissible fade show" role="alert">
-    <strong>Notice!</strong> Get 20% off on your first Booking!
+    <strong>Hurry Up!</strong> Get 20% off on your first Booking!
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
   </div>
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-slight bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Livin' Boston <span class="badge bg-secondary"></span></a>
+      <a class="navbar-brand" href="#">
+        <img src="images/11.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">  Livin' Boston <span class="badge bg-secondary"></span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -52,7 +54,7 @@
               <li><a class="dropdown-item" href="#">Book</a></li>
               <li><a class="dropdown-item" href="#">Plan a Trip</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Log Out</a></li>
+              <li><a class="dropdown-item" href="#" onclick="logout()">Log Out</a></li>
             </ul>
           </li>
           </ul>
@@ -166,11 +168,11 @@
     <div class="accordion mb-5" id="accordionExample">
       <div class="accordion-item">
         <h2 class="accordion-header">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
             What is the best time to visit Boston?
           </button>
         </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
           <div class="accordion-body">
            <p>The best time to visit Boston is between June and October when the weather is warm, and the city is bustling with outdoor activities and festivals. This period offers a perfect mix of sightseeing opportunities and pleasant weather to explore the historical and cultural attractions.</p>
           </div>
@@ -225,13 +227,13 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="images/Carousel1.png" class="d-block w-100" alt="Slide 1">
+            <img src="images/Carousel2.jpg" class="d-block w-100" alt="Slide 1">
           </div>
           <div class="carousel-item">
-            <img src="images/Carousel2.png" class="d-block w-100" alt="Slide 2">
+            <img src="images/Carousel3.png" class="d-block w-100" alt="Slide 2">
           </div>
           <div class="carousel-item">
-            <img src="images/Carousel3.png" class="d-block w-100" alt="Slide 3">
+            <img src="images/Carousel1.jpg" class="d-block w-100" alt="Slide 3">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -283,7 +285,7 @@
   <!-- Footer -->
   <footer class="bg-light py-4 text-center">
     <div class="container" id="contact">
-      <p><i class="fa fa-home"></i>Abc Building, ABC street, Boston, 11111, USA</p>
+      <p><i class="fa fa-home"></i>Livin' Boston 234 Beacon Street, Boston, MA 02116, USA</p>
     <i class="fa fa-envelope"></i>
     <a href="mailto:thathykalva.m@northeastern.edu" data-bs-toggle="tooltip" title="Click here to send a mail">Email here</a>
     <i class="fa fa-phone"></i>
@@ -299,5 +301,10 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function logout() {
+      window.location.href = 'login.html';
+    }
+  </script>
 </body>
 </html>
