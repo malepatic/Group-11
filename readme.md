@@ -77,4 +77,3 @@ Added inside the modal to collect user information.
 `25.Toast Notification`: 
 A small popup message in the Top-center.
 
->>>>>>> main
