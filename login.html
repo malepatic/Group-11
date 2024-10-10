@@ -10,13 +10,34 @@
 
   <style>
     body {
-      background-color: #f8f9fa;
+      background-image: url('wp12549190.jpg'); 
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
+
     .login-container {
       max-width: 400px;
-      margin: 50px auto;
+      margin: auto;
+      background-color: rgba(255, 255, 255, 0.9); 
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
     }
-    
+
+    .login-container h2 {
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: 576px) {
+      .login-container {
+        max-width: 90%;
+      }
+    }
   </style>
 </head>
 <body>
