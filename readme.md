@@ -1,6 +1,6 @@
 #Assignment 5
 
-A full-stack Airbnb clone website would simulate the core functionalities of the popular home-sharing platform, allowing users to list, search, and book accommodations.
+This website is designed to help users manage tasks efficiently and serve as a landing page for a business. The website consists of a Login Page and a Home/Landing Page, each built with responsive, modern web design principles using Bootstrap. The Login Page includes validation and ensures a smooth user experience, while the Home Page is designed to be user-friendly and visually appealing with various Bootstrap components.
 
 
 `Accordion`:
