@@ -25,7 +25,7 @@ A dialog box that overlays the main content to display additional information or
  For the collapsible navigation bar on smaller screens.
 
 `nav-item`: 
-Individual items in the navigation bar. 
+Individual items in the navigation bar..
 
 `nav-link`: 
 Links in the navigation bar that lead to different sections of the page or external resources.
