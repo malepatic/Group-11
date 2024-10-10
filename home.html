@@ -18,12 +18,12 @@
 <body>
   <!-- Alert -->
   <div class="alert alert-warning alert-dismissible fade show" role="alert">
-    <strong>Notice!</strong> This is a warning alert—check it out!
+    <strong>Notice!</strong> Get 20% off on your first Booking!
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
   </div>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-slight bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Livin' Boston <span class="badge bg-secondary"></span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,7 +41,7 @@
             <a class="nav-link" href="#contact">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Logout</a>
+            <a class="nav-link" href="#"></a>
           </li>
           <!-- Dropdown -->
           <li class="nav-item dropdown">
@@ -75,6 +75,36 @@
       </button>
       </div>
   </section>
+    <!-- Form Controls (Inside Modal) -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Exclusive Boston Stay Offers</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Get up to 20% off on your first booking in selected hotels across Boston! Book now and experience the best of the city.</p>
+            <p>Sign up for our newsletter to get more exclusive deals and travel tips.</p>
+            <!-- Form Controls -->
+            <form>
+              <div class="mb-3">
+                <label for="nameInput" class="form-label">Name</label>
+                <input type="text" class="form-control" id="nameInput" placeholder="Enter your name">
+              </div>
+              <div class="mb-3">
+                <label for="emailInput" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
   <!-- Features Section -->
   <section class="py-5">
@@ -215,6 +245,20 @@
       </div>
     </div>
   </section>
+
+  <!-- Toast Notification -->
+  <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <strong class="me-auto">Livin' Boston</strong>
+        <small>Just Now</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Special offer for a limited time! Use code <strong>BOS20</strong> for 20% off on all bookings.
+      </div>
+    </div>
+  </div>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
