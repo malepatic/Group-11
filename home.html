@@ -6,30 +6,26 @@
   <title>Livin' Boston</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
 
-  <link rel="icon" type="image/x-icon" href="images/logo.jpeg">
-  <style>
-    body {
-      background-color: #fff;
-    }
-    .hero-section {
-      background-color: #007bff;
-      color: #fff;
-      padding: 100px 0;
-    }
-    .feature-card {
-      transition: transform 0.3s ease;
-    }
-    .feature-card:hover {
-      transform: scale(1.05);
-    }
-  </style>
+  <link rel="icon" type="image/x-icon" href="11.png">
+  
+
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="icon" type="image/x-icon" href="images/11.png">
 </head>
 <body>
+  <!-- Alert -->
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>Notice!</strong> This is a warning alert—check it out!
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Livin' Boston <span class="badge bg-secondary">🏨</span></a>
+      <a class="navbar-brand" href="#">Livin' Boston <span class="badge bg-secondary"></span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -44,21 +40,40 @@
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
           </li>
-        </ul>
-        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
-          Sign Up for Special Offers!
-        </button>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Logout</a>
+          </li>
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              More
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Book</a></li>
+              <li><a class="dropdown-item" href="#">Plan a Trip</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Log Out</a></li>
+            </ul>
+          </li>
+          </ul>
+          <!-- Search Bar -->
+        <form class="d-flex ms-3">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
       </div>
     </div>
   </nav>
-
   <!-- Hero Section -->
   <section class="hero-section text-center">
     <div class="container">
-      <h1>Welcome to Our Website</h1>
+      <h1>Welcome to Boston</h1>
       <p>Explore our features and services that will make your life easier.</p>
-      <a href="#" class="btn btn-light">Get Started</a>
-    </div>
+     
+      <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Check Special Offers!
+      </button>
+      </div>
   </section>
 
   <!-- Features Section -->
@@ -67,90 +82,107 @@
       <div class="row">
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="card feature-card">
-            <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Feature 1">
+            <img src="images/eliot.webp" class="card-img-top" alt="Feature 1">
             <div class="card-body">
-              <h5 class="card-title">Feature 1</h5>
-              <p class="card-text">Description of Feature 1.</p>
-              <a href="#" class="btn btn-primary">Learn More</a>
+              <h5 class="card-title">Harborside Inn</h5>
+              <p class="card-text"> Hotel in Financial District, Boston</p>
+              <a href="#" class="btn btn-primary">Book Now</a>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="card feature-card">
-            <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Feature 2">
+            <img src="images/pru.webp" class="card-img-top" alt="Feature 2">
             <div class="card-body">
-              <h5 class="card-title">Feature 2</h5>
-              <p class="card-text">Description of Feature 2.</p>
-              <a href="#" class="btn btn-primary">Learn More</a>
+              <h5 class="card-title">The Eliot Hotel</h5>
+              <p class="card-text">Hotel in Back Bay, Boston</p>
+              <a href="#" class="btn btn-primary">Book Now</a>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="card feature-card">
-            <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Feature 3">
+            <img src="images/Common.webp" class="card-img-top" alt="Feature 3">
             <div class="card-body">
-              <h5 class="card-title">Feature 3</h5>
-              <p class="card-text">Description of Feature 3.</p>
-              <a href="#" class="btn btn-primary">Learn More</a>
+              <h5 class="card-title">The Bostonian Boston</h5>
+              <p class="card-text">Downtown Boston.</p>
+              <a href="#" class="btn btn-primary">Book Now</a>
             </div>
           </div>
+        </div>
+      </div>
+      <!-- Pagination -->
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+
+<!-- Button trigger modal -->
+
+  <section>
+    <h2 class="text-center mt-5 mb-4">Most Frequently Asked Questions</h2>
+    <div class="accordion mb-5" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            What is the best time to visit Boston?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+           <p>The best time to visit Boston is between June and October when the weather is warm, and the city is bustling with outdoor activities and festivals. This period offers a perfect mix of sightseeing opportunities and pleasant weather to explore the historical and cultural attractions.</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            What are the top neighborhoods to stay in Boston?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+          Boston has several vibrant neighborhoods to choose from:
+            <ul class="list-group">
+              <li class="list-group-item"><strong>Back Bay</strong>: Known for its luxury hotels, beautiful brownstone homes, and proximity to the city's best shopping spots.</li>
+              <li class="list-group-item"><strong>North End</strong>: A historic area famous for its Italian restaurants and close proximity to the Freedom Trail.</li>
+              <li class="list-group-item"><strong>Seaport District</strong>: A modern, trendy area with waterfront views, offering high-end accommodations and great dining options.</li>
+              <li class="list-group-item"><strong>Cambridge</strong>: Just across the Charles River, it's home to Harvard University and offers a more relaxed, college-town vibe.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            What are the must-see attractions in Boston?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+              Boston offers a rich history and cultural landmarks. Some must-see attractions include:
+              <ul class="list-group">
+                <li class="list-group-item"><strong>Freedom Trail</strong>: A 2.5-mile trail leading through 16 historical sites.
+                <li class="list-group-item"><strong>Boston Common</strong>: America's oldest public park, perfect for a relaxing stroll.
+                <li class="list-group-item"><strong>Fenway Park</strong>: Visit the legendary home of the Boston Red Sox.
+                <li class="list-group-item"><strong>Boston Museum of Fine Arts</strong>: One of the largest art museums in the U.S., housing an impressive collection of art from around the world.
+            </ul>
+            </div>
         </div>
       </div>
     </div>
-    </section>
-
-    <section>
-      <h2 class="text-center mt-5 mb-4">Most Frequently Asked Questions</h2>
-      <div class="accordion mb-5" id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              What is the best time to visit Boston?
-            </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-             <p>The best time to visit Boston is between June and October when the weather is warm, and the city is bustling with outdoor activities and festivals. This period offers a perfect mix of sightseeing opportunities and pleasant weather to explore the historical and cultural attractions.</p>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              What are the top neighborhoods to stay in Boston?
-            </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-            Boston has several vibrant neighborhoods to choose from:
-              <ul class="list-group">
-                <li class="list-group-item"><strong>Back Bay</strong>: Known for its luxury hotels, beautiful brownstone homes, and proximity to the city's best shopping spots.</li>
-                <li class="list-group-item"><strong>North End</strong>: A historic area famous for its Italian restaurants and close proximity to the Freedom Trail.</li>
-                <li class="list-group-item"><strong>Seaport District</strong>: A modern, trendy area with waterfront views, offering high-end accommodations and great dining options.</li>
-                <li class="list-group-item"><strong>Cambridge</strong>: Just across the Charles River, it's home to Harvard University and offers a more relaxed, college-town vibe.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              What are the must-see attractions in Boston?
-            </button>
-          </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-                Boston offers a rich history and cultural landmarks. Some must-see attractions include:
-                <ul class="list-group">
-                  <li class="list-group-item"><strong>Freedom Trail</strong>: A 2.5-mile trail leading through 16 historical sites.
-                  <li class="list-group-item"><strong>Boston Common</strong>: America's oldest public park, perfect for a relaxing stroll.
-                  <li class="list-group-item"><strong>Fenway Park</strong>: Visit the legendary home of the Boston Red Sox.
-                  <li class="list-group-item"><strong>Boston Museum of Fine Arts</strong>: One of the largest art museums in the U.S., housing an impressive collection of art from around the world.
-              </ul>
-              </div>
-          </div>
-        </div>
-      </div>
   </section>
 
   <section>
@@ -184,7 +216,6 @@
     </div>
   </section>
 
-
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -205,16 +236,12 @@
   </div>
 </div>
 
-    
-
-
   <!-- Footer -->
   <footer class="bg-light py-4 text-center">
     <div class="container" id="contact">
       <p><i class="fa fa-home"></i>Abc Building, ABC street, Boston, 11111, USA</p>
     <i class="fa fa-envelope"></i>
-    <a href="mailto:thathykalva.m@northeastern.edu" data-bs-toggle="tooltip" title="Click here to send a mail">Email here</a><br>
-    <p></p>
+    <a href="mailto:thathykalva.m@northeastern.edu" data-bs-toggle="tooltip" title="Click here to send a mail">Email here</a>
     <i class="fa fa-phone"></i>
     <a href="tel:6172127430" data-bs-toggle="tooltip" title="Click here to call">Call here</a>
     <p></p>
